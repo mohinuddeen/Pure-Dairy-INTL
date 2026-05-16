@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations and styles */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.15);
+}
+
+.industry-card {
+  transition: all 0.25s ease;
+}
+
+.industry-card:hover {
+  transform: scale(1.02);
+  background-color: #f8fafc;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(10px); }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Horizontal scroll custom styles */
+.hide-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4f46e5 #e2e8f0;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background: #4f46e5;
+  border-radius: 10px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #4338ca;
+}
+
+/* Grabbing cursor for horizontal scroll */
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grab:active {
+  cursor: grabbing;
+}
+
+/* Smooth reveal animations for horizontal cards */
+.reveal {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s ease, transform 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* For better mobile responsiveness */
+@media (max-width: 768px) {
+  .hide-scrollbar {
+    scrollbar-width: none; /* Hide scrollbar on mobile for cleaner look */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
