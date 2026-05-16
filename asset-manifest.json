@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Pure-Dairy-INTL/static/css/main.6924de0a.css",
-    "main.js": "/Pure-Dairy-INTL/static/js/main.7fc142af.js",
+    "main.css": "/Pure-Dairy-INTL/static/css/main.c57d5be5.css",
+    "main.js": "/Pure-Dairy-INTL/static/js/main.21a178b5.js",
     "static/js/453.7fb46ddd.chunk.js": "/Pure-Dairy-INTL/static/js/453.7fb46ddd.chunk.js",
     "index.html": "/Pure-Dairy-INTL/index.html",
-    "main.6924de0a.css.map": "/Pure-Dairy-INTL/static/css/main.6924de0a.css.map",
-    "main.7fc142af.js.map": "/Pure-Dairy-INTL/static/js/main.7fc142af.js.map",
+    "main.c57d5be5.css.map": "/Pure-Dairy-INTL/static/css/main.c57d5be5.css.map",
+    "main.21a178b5.js.map": "/Pure-Dairy-INTL/static/js/main.21a178b5.js.map",
     "453.7fb46ddd.chunk.js.map": "/Pure-Dairy-INTL/static/js/453.7fb46ddd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6924de0a.css",
-    "static/js/main.7fc142af.js"
+    "static/css/main.c57d5be5.css",
+    "static/js/main.21a178b5.js"
   ]
 }
