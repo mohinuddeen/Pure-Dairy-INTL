@@ -15,8 +15,8 @@ const Footer = () => (
       </div>
       <div>
         <h4 className="font-bold text-white">Contact</h4>
-        <p><i className="fas fa-phone mr-2"></i> +1 (888) 567-DAIRY<br/>
-        <i className="fas fa-envelope"></i> sales@pure-dairy.com</p>
+        <p><i className="fas fa-phone mr-2"></i> +61 3 9989 4000Y<br/>
+        <i className="fas fa-envelope"></i> costumerservice@puredairyinternational.com</p>
       </div>
       <div>
         <h4 className="font-bold text-white">Follow Us</h4>

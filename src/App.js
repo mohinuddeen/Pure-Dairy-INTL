@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -9,8 +9,11 @@ import About from './components/About';
 import Testimonials from './components/Testimonials';
 import GlobalAndContact from './components/GlobalAndContact';
 import Footer from './components/Footer';
+import Career from './components/Career';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('home');
+
   useEffect(() => {
     // Scroll reveal observer
     const reveals = document.querySelectorAll('.reveal');
@@ -24,11 +27,29 @@ function App() {
     
     reveals.forEach(el => observer.observe(el));
     return () => observer.disconnect();
-  }, []);
+  }, [currentPage]);
 
+  // Handle navigation
+  const handleNavigation = (page) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Render different pages
+  if (currentPage === 'career') {
+    return (
+      <div className="font-sans bg-white">
+        <Navbar onNavigate={handleNavigation} currentPage={currentPage} />
+        <Career />
+        <Footer />
+      </div>
+    );
+  }
+
+  // Home page
   return (
     <div className="font-sans bg-white">
-      <Navbar />
+      <Navbar onNavigate={handleNavigation} currentPage={currentPage} />
       <Hero />
       <Industries />
       <Products />
