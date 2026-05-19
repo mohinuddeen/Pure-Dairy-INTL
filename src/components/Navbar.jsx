@@ -36,8 +36,16 @@ const Navbar = ({ onNavigate, currentPage }) => {
       scrolled ? 'bg-white/90 backdrop-blur-md shadow-md' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleNavigation('Home')}>
-          <i className="fas fa-cheese text-3xl text-primary-600"></i>
+        <div
+          className="flex items-center gap-3 cursor-pointer"
+          onClick={() => handleNavigation('Home')}
+        >
+          <img
+            src="https://raw.githubusercontent.com/mohinuddeen/Pure-Dairy-INTL/refs/heads/main/public/logoTarns.png"
+            alt="Pure Dairy International Logo"
+            className="h-12 w-auto object-contain"
+          />
+
           <span className="font-extrabold text-xl tracking-tight text-gray-800">
             Pure Dairy <span className="text-primary-600">International</span>
           </span>

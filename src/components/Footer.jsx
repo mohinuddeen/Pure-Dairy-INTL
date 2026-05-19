@@ -4,8 +4,15 @@ const Footer = () => (
   <footer className="bg-gray-900 text-gray-300 py-12">
     <div className="container mx-auto px-6 grid md:grid-cols-4 gap-8">
       <div>
-        <i className="fas fa-cheese text-2xl text-primary-400"></i>
-        <p className="mt-3 text-sm">Pure Dairy International — Delivering dairy excellence since 2008.</p>
+        <img
+          src="https://raw.githubusercontent.com/mohinuddeen/Pure-Dairy-INTL/refs/heads/main/public/logoWhite.png"
+          alt="Pure Dairy International Logo"
+          className="h-14 w-auto object-contain"
+        />
+
+        <p className="mt-3 text-sm">
+          Pure Dairy International — Delivering dairy excellence since 2008.
+        </p>
       </div>
       <div>
         <h4 className="font-bold text-white">Quick Links</h4>
@@ -15,7 +22,7 @@ const Footer = () => (
       </div>
       <div>
         <h4 className="font-bold text-white">Contact</h4>
-        <p><i className="fas fa-phone mr-2"></i> +61 3 9989 4000Y<br/>
+        <p><i className="fas fa-phone mr-2"></i> +61 3 9989 4000<br/>
         <i className="fas fa-envelope"></i> costumerservice@puredairyinternational.com</p>
       </div>
       <div>
