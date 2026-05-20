@@ -11,7 +11,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => setCurrentIdx(prev => (prev+1)%images.length), 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
   
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
