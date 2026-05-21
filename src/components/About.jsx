@@ -23,9 +23,9 @@ const About = () => (
           </div>
         </div>
       </div>
-      <div className="md:w-1/2 mt-10 md:mt-0 reveal">
-        <img src="https://images.unsplash.com/photo-1590004953392-5aba2e775c2d?w=800&auto=format" alt="dairy factory" className="rounded-2xl shadow-2xl"/>
-      </div>
+      {/* <div className="md:w-1/2 mt-10 md:mt-0 reveal">
+        <img src="https://raw.githubusercontent.com/mohinuddeen/Pure-Dairy-INTL/refs/heads/main/public/logoTarns.png" alt="dairy factory" className="rounded-2xl shadow-2xl"/>
+      </div> */}
     </div>
   </section>
 );
